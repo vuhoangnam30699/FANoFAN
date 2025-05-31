@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    
+    <!-- Google fonts - Poppins-->
+    <link rel="stylesheet" href="./static/font/playfair_display.css">
+    <link rel="stylesheet" href="./static/font/poppins.css">
+
+    <!-- Icon -->
+    <link rel="shortcut icon" href="static/img/Logo/icon.png" type="image/x-icon"/>
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="./static/css/cdn.jsdelivr.net_npm_bootstrap@5.3.0_dist_css_bootstrap.min.css">
+    <script src="./static/js/libJs/cdn.jsdelivr.net_npm_bootstrap@5.3.0_dist_js_bootstrap.bundle.min.js"></script>
+    <!-- fontawesome icon -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <!-- Animation -->
+    <link rel="stylesheet" href="./static/css/libCss/animate.min.css">
+    <!-- CSS -->
+    <link rel="stylesheet" href="./static/css/base.css">
+    <link rel="stylesheet" href="./static/css/index.css">
+
+</head>
+
+<body>
+    <header class="header">
+        <!-- Navbar -->
+          <nav class="navbar navbar-expand-lg fixed-top navbar-light bg-white">
+            <div class="container-fluid">
+              <div class="d-flex align-items-center">
+                <a class="navbar-brand py-1" href="index.html">
+                  <img src="./static/img/Logo/logo.png" alt="FANoFAN logo" width="200px" height="40px"/>
+                </a>
+              </div>
+              <button class="navbar-toggler navbar-toggler-right collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation" fdprocessedid="ea1l32">
+                <i class="fa fa-bars"></i>
+              </button>
+              <!-- Navbar Collapse -->
+              <div class="navbar-collapse collapse" id="navbarCollapse">
+                <ul class="navbar-nav ms-auto nav-underline">
+                  <li class="nav-item">
+                    <a class="nav-link" href="index.html">HOME</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="about.html">ABOUT</a>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      CATEGORIES
+                    </a>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="categories_ceiling.html">Ceiling Fans</a></li>
+                      <li><a class="dropdown-item" href="categories_table.html">Table Fans</a></li>
+                      <li><a class="dropdown-item" href="categories_standing.html">Standing Fans</a></li>
+                      <li><a class="dropdown-item" href="categories_exhaust.html">Exhaust Fans</a></li>
+                    </ul>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="gallery.html">GALLERY</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="contact.html">CONTACT</a>
+                  </li>
+                  <li class="nav-item">
+                    &nbsp;
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" data-bs-toggle="search">
+                      <i class="fas fa-search"></i>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+        </nav>
+        <div class="search-area-wrapper">
+          <div class="search-area d-flex align-items-center justify-content-center">
+            <div class="close-btn">
+              <i class="fas fa-times"></i>
+            </div>
+            <form class="search-area-form" action="#">
+              <div class="mb-4 position-relative">
+                <input class="search-area-input" type="search"  id="input-box" placeholder="What are you looking for?">
+                <button class="search-area-button" type="submit" ><i class="fa-solid fa-x-mark"></i></button>
+              </div>
+              <div class="result-box">
+              </div>
+            </form>
+          </div>
+        </div>
+    </header>
+    
+    <body>
+      <!-- start slide -->
+      <section id="slides">
+
+        <div id="carousel" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-inner">
+
+            <!-- Slide 1 -->
+            <div class="carousel-item active">
+              <img src="./static/img/home/fanslide1.jpg" class="d-block w-100" alt="...">
+              <div class="carousel-container">
+                <div class="container">
+                  <h2 class="animate__animated animate__fadeInDown">Welcome to <span>FANoFAN</span></h2>
+                  <p class="animate__animated animate__fadeInUp">FANoFAN - Experience the refreshing breeze of Vietnam with our top-quality and innovative fans. Keep your cool and stay comfortable with FANoFAN.</p>
+                  <a href="about.html" class="btn-get-started animate__animated animate__fadeInUp scrollto">Read More</a>
+                </div>
+              </div>
+            </div>
+
+            <!-- Slide 2 -->
+            <div class="carousel-item">
+              <img src="./static/img/home/fanslide2.jpg" class="d-block w-100" alt="...">
+              <div class="carousel-container">
+                <div class="container">
+                  <h2 class="animate__animated animate__fadeInDown">To indulge in the luxurious and functional new designs</h2>
+                  <p class="animate__animated animate__fadeInUp">Immerse yourself in the luxurious and functional world of FANoFAN's new designs. Elevate your space with our sophisticated fan options and experience the ultimate in comfort and style</p>
+                  <a href="categories_ceiling.html" class="btn-get-started animate__animated animate__fadeInUp scrollto">Learn more</a>
+                </div>
+              </div>
+            </div>
+
+            <!-- Slide 3 -->
+            <div class="carousel-item">
+              <img src="./static/img/home/fanslide3.jfif" class="d-block w-100" alt="...">
+              <div class="carousel-container">
+                <div class="container">
+                  <h2 class="animate__animated animate__fadeInDown">With the best-selling products this summer, you'll enjoy comfort and coolness</h2>
+                  <p class="animate__animated animate__fadeInUp">We will provide you with information on pricing, sales policies, and the best deals available for distributors</p>
+                  <a href="gallery.html" class="btn-get-started animate__animated animate__fadeInUp scrollto">Learn more</a>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+          <!-- Button -->
+          <button class="carousel-control-prev" type="button" data-bs-target="#carousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+
+        </div>
+
+      </section>
+      <!-- End Slide -->
+      <main id="main">
+        <!-- ======= About Section ======= -->
+        <section id="about" class="about py-5" >
+          <div class="container">
+            <div class="row content">
+              <div class="col-lg-6">
+                <h2 class="text-danger">The FANoFAn brings freshness to your home</h2>
+                <h3>At our fan company, we are dedicated to providing you with maximum comfort and convenience</h3>
+              </div>
+              <div class="col-lg-6 pt-4 pt-lg-0">
+                <p>
+                  Our range of fans is meticulously crafted, ensuring optimal performance and energy efficiency. 
+                  Whether you need a sleek and modern ceiling fan to enhance your space or a portable and versatile pedestal fan, 
+                  we have the perfect solution for you
+                </p>
+                <ul>
+                  <li><i class="fa fa-check-double"></i> Our fans are designed to create a cool and soothing environment, 
+                    helping you beat the heat and enjoy tranquility in your home or office
+                  </li>
+                  <li><i class="fa fa-check-double"></i> We take pride in our commitment to quality and customer satisfaction</li>
+                  <li><i class="fa fa-check-double"></i> With our superior fans, you can enjoy the gentle breeze and remarkable functionality they provide</li>
+                </ul>
+                <p class="fst-italic">
+                  Trust us to bring comfort and style to your life. Choose from our diverse selection and experience the difference that our fan company offers.
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- End About Section -->
+
+        <!-- ======= Clients Section ======= -->
+        <section id="clients" class="clients section-bg">
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center">
+                <a href="https://www.amazon.com/s?k=fanofan&crid=311XV2B7HJX8L&sprefix=fanfan%2Caps%2C365&ref=nb_sb_noss_2">
+                  <img src="./static/img/home/client1.png" class="img-fluid" alt="">
+                </a>
+              </div>
+
+              <div class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center">
+                <a href="https://www.amazon.com/s?k=fanofan&crid=311XV2B7HJX8L&sprefix=fanfan%2Caps%2C365&ref=nb_sb_noss_2">
+                  <img src="./static/img/home/client2.png" class="img-fluid" alt="">
+                </a>
+              </div>
+
+              <div class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center">
+                <a href="https://search.jd.com/Search?keyword=%E7%94%B5%E6%89%87&enc=utf-8&pvid=56d3db596d634d38ba67139e22b50ce3">
+                  <img src="./static/img/home/client3.png" class="img-fluid" alt="">
+                </a>
+              </div>
+
+              <div class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center">
+                <a href="https://shopee.vn/search?keyword=qu%E1%BA%A1t">
+                  <img src="./static/img/home/client4.png" class="img-fluid" alt="">
+                </a>
+              </div>
+
+              <div class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center">
+                <a href="https://www.lazada.vn/catalog/?q=qu%E1%BA%A1t%20%C4%91%E1%BB%A9ng">
+                  <img src="./static/img/home/client5.png" class="img-fluid" alt="">
+                </a>
+              </div>
+
+              <div class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center">
+                <a href="https://www.ebay.com/sch/i.html?_from=R40&_trksid=p2380057.m570.l1313&_nkw=fan&_sacat=0">
+                  <img src="./static/img/home/client6.png" class="img-fluid" alt="">
+                </a>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- End Clients Section -->
+        
+        <!-- ======= Services Section ======= -->
+        <section id="services" class="services mt-5 pt-5">
+          <div class="container">
+            <div class="row">
+              <div class="col-md-6">
+                <div class="icon-box">
+                  <i class="fas fa-headset"></i>
+                  <h4><a href="#">Advisory Service</a></h4>
+                  <p>Professional consultation services tailored to meet your specific needs and goals</p>
+                </div>
+              </div>
+              <div class="col-md-6 mt-4 mt-md-0">
+                <div class="icon-box">
+                  <i class="fas fa-clipboard-list"></i>
+                  <h4><a href="#">Building a Model</a></h4>
+                  <p>We are dedicated to helping you craft a successful business model by providing our expertise and guidance</p>
+                </div>
+              </div>
+              <div class="col-md-6 mt-4 mt-md-0">
+                <div class="icon-box">
+                  <i class="fas fa-ad"></i>
+                  <h4><a href="#">Advertising Support</a></h4>
+                  <p>We provide a variety of promotional support services to help you enhance brand awareness and reach potential customers</p>
+                </div>
+              </div>
+              <div class="col-md-6 mt-4 mt-md-0">
+                <div class="icon-box">
+                  <i class="fas fa-shipping-fast"></i>
+                  <h4><a href="#">Shipping</a></h4>
+                  <p>We offer reliable and efficient shipping services to ensure your packages arrive safely and on time</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- End Services Section -->
+
+        <!-- Banner -->
+        <section id="banner" class="banner section-bg">
+          <div class="bg-danger">
+            <div class="container">
+              <div class="row">
+                <div class="col-lg-6 text-white text-center py-8">
+                  <h2 class="display-4 text-uppercase mb-4">FLASH SALE</h2>
+                  <p class="mb-0">Up to</p>
+                  <h2 class="display-1 fw-bold mb-3">50%</h2>
+                  <p class="mb-5">* Free shipping on orders over $100,000</p>
+                  <p><a class="btn btn-outline-light" href="gallery.html#logoSpecial_offer">Discover now</a></p>
+                </div>
+                <div class="col-lg-6">
+                  <video src="./static/img/home/bannervideo.mp4" autoplay loop muted></video>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- End Banner -->
+        
+      </main>
+    </body>
+    
+    <footer class="position-relative z-index-10 d-print-none" style="padding-top: 72px">
+        <div class="py-6 bg-gray-200 text-muted">
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-3 mb-5 mb-lg-0">
+                <div class="fw-bold text-uppercase text-dark mb-3">FANoFAN</div>
+                <p><i class="fas fa-home mr-3">&nbsp;</i> 8 Ton That Thuyet St, Hanoi </p>
+                <p><i class="fas fa-envelope mr-3">&nbsp;</i> info@fanofan.com </p>
+                <p><i class="fas fa-phone mr-3">&nbsp;</i> (012) 345-6789 </p>
+                <p><i class="fas fa-print mr-3">&nbsp;</i> (012) 345-6789 </p>
+              </div>
+              <div class="col-lg-3 col-md-6 mb-5 mb-lg-0">
+                <h6 class="text-uppercase text-dark mb-3">Products</h6>
+                <ul class="list-unstyled">
+                  <li><a class="text-muted" href="categories_ceiling.html">Ceiling Fans</a></li>
+                  <li><a class="text-muted" href="categories_table.html">Table Fans</a></li>
+                  <li><a class="text-muted" href="categories_standing.html">Standing Fans</a></li>
+                  <li><a class="text-muted" href="categories_exhaust.html">Exhaust Fans</a></li>
+                </ul>
+              </div>
+              <div class="col-lg-3 col-md-6 mb-5 mb-lg-0">
+                <h6 class="text-uppercase text-dark mb-3">Company</h6>
+                <ul class="list-unstyled">
+                  <li><a class="text-muted" href="about.html">About</a></li>
+                  <li><a class="text-muted" href="gallery.html">Gallery</a></li>
+                  <li><a class="text-muted" href="contact.html">Contact</a></li>
+                  <li><a class="text-muted" href="queries.html">Query</a></li>
+                  <li><a class="text-muted" href="#">Sitemap</a></li>
+                </ul>
+              </div>
+              <div class="col-lg-3">
+                <h6 class="text-uppercase text-dark mb-3">Daily Offers & Discounts</h6>
+                <p class="mb-3">It is very important for the customer to pay attention to the adipiscing process. And so the times.</p>
+                <form action="#" id="newsletter-form">
+                  <div class="input-group mb-3">
+                    <input class="form-control bg-transparent border-dark border-end-0" type="email" placeholder="Your Email Address" aria-label="Your Email Address" fdprocessedid="ozjrm6">
+                    <button class="btn btn-outline-dark border-start-0" type="submit" fdprocessedid="2dvk5">
+                      <i class="fa fa-paper-plane text-lg"></i>
+                    </button>
+                  </div>
+                </form>
+                <ul class="list-inline">
+                  <li class="list-inline-item">
+                    <a class="text-muted text-primary-hover" href="#" title="twitter">
+                      <i class="fab fa-twitter"></i>
+                    </a>
+                  </li>
+                  <li class="list-inline-item">
+                    <a class="text-muted text-primary-hover" href="#" title="facebook">
+                      <i class="fab fa-facebook"></i>
+                    </a>
+                  </li>
+                  <li class="list-inline-item">
+                    <a class="text-muted text-primary-hover" href="#" title="instagram">
+                      <i class="fab fa-instagram"></i>
+                    </a>
+                  </li>
+                  <li class="list-inline-item">
+                    <a class="text-muted text-primary-hover" href="#" title="youtube">
+                      <i class="fab fa-youtube"></i>
+                    </a>
+                  </li>
+                  <li class="list-inline-item">
+                    <a class="text-muted text-primary-hover" href="#" title="pinterest">
+                      <i class="fab fa-pinterest"></i>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="py-4 fw-light bg-gray-800 text-gray-300">
+          <div class="container">
+            <div class="row align-items-center">
+              <div class="col-md-6 text-center text-md-start">
+                <p class="text-sm mb-md-0">© 2023, FANoFAN.  All rights reserved.</p>
+              </div>
+              <div class="col-md-6">
+                <ul class="list-inline mb-0 mt-2 mt-md-0 text-center text-md-end">
+                  <li class="list-inline-item">
+                    <img class="w-2rem" src="./static/img/item/visa.svg" alt="...">
+                  </li>
+                  <li class="list-inline-item">
+                    <img class="w-2rem" src="./static/img/item/mastercard.svg" alt="...">
+                  </li>
+                  <li class="list-inline-item">
+                    <img class="w-2rem" src="./static/img/item/paypal.svg" alt="...">
+                  </li>
+                  <li class="list-inline-item">
+                    <img class="w-2rem" src="./static/img/item/western-union.svg" alt="...">
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+    </footer>
+    <!-- Scroll top -->
+    <a href="#" id="to-top" title="Back To Top">
+      <i class="fas fa-arrow-up text-white"></i>
+    </a>
+    <!-- js lib slide -->
+
+    <script src="./static/js/libJs/jquery.min.js"></script>
+    <script src="./static/js/main.js"></script>
+    <script src="./static/js/search.js"></script>
+
+</body>
+</html>

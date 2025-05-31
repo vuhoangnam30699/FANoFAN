@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery</title>
+    
+    <!-- Google fonts - Poppins-->
+    <link rel="stylesheet" href="./static/font/playfair_display.css">
+    <link rel="stylesheet" href="./static/font/poppins.css">
+
+    <!-- Icon -->
+    <link rel="shortcut icon" href="static/img/Logo/icon.png" type="image/x-icon"/>
+
+    <!-- Bootstrap -->
+    <link href="./static/css/cdn.jsdelivr.net_npm_bootstrap@5.3.0_dist_css_bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+
+    <!-- fontawesome icon -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <!-- CSS -->
+    <link rel="stylesheet" href="./static/css/base.css">
+    <link rel="stylesheet" href="./static/css/gallery.css">
+</head>
+
+<body>
+    <header class="header">
+        <!-- Navbar -->
+          <nav class="navbar navbar-expand-lg fixed-top navbar-light bg-white">
+            <div class="container-fluid">
+              <div class="d-flex align-items-center">
+                <a class="navbar-brand py-1" href="index.html">
+                  <img src="static/img/Logo/logo.png" alt="FANoFAN logo" width="200px" height="40px"/>
+                </a>
+              </div>
+              <button class="navbar-toggler navbar-toggler-right collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation" fdprocessedid="ea1l32">
+                <i class="fa fa-bars"></i>
+              </button>
+              <!-- Navbar Collapse -->
+              <div class="navbar-collapse collapse" id="navbarCollapse" >
+                <ul class="navbar-nav ms-auto nav-underline">
+                  <li class="nav-item">
+                    <a class="nav-link" href="index.html">HOME</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="about.html">ABOUT</a>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      CATEGORIES
+                    </a>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="categories_ceiling.html">Ceiling Fans</a></li>
+                      <li><a class="dropdown-item" href="categories_table.html">Table Fans</a></li>
+                      <li><a class="dropdown-item" href="categories_standing.html">Standing Fans</a></li>
+                      <li><a class="dropdown-item" href="categories_exhaust.html">Exhaust Fans</a></li>
+                    </ul>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="gallery.html">GALLERY</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="contact.html">CONTACT</a>
+                  </li>
+                    <li class="nav-item">
+                        &nbsp;
+                        &nbsp;
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" data-bs-toggle="search">
+                            <i class="fas fa-search"></i>
+                        </a>
+                    </li>
+                </ul>
+              </div>
+            </div>
+        </nav>
+        <div class="search-area-wrapper">
+            <div class="search-area d-flex align-items-center justify-content-center">
+                <div class="close-btn">
+                    <i class="fas fa-times"></i>
+                </div>
+                <form class="search-area-form" action="#">
+                    <div class="mb-4 position-relative">
+                        <input class="search-area-input" type="search"  id="input-box" placeholder="What are you looking for?">
+                        <button class="search-area-button" type="submit" ><i class="fa-solid fa-x-mark"></i></button>
+                    </div>
+                    <div class="result-box">
+                    </div>
+                </form>
+            </div>
+        </div>
+    </header>
+    
+    <body>
+        <!-- Create banner -->
+        <div class="img-fluid mb-5 banner_top" style="background-image: url(./static/img/about/background.jpg);" >
+            <h1 class="text-center">GALLERY</h1>
+            <p class="text-center">
+                <a href="index.html">Home</a>
+                <i class="fa fa-chevron-right"></i>
+                Gallery
+            </p>
+        </div>
+        <!-- Create button special offer -->
+        <button class="me-3 px-3 py-3 btn-shine float-end animate__animated animate__shakeX animate__infinite animate__slow animate__delay-5s" id="special-offer-btn">
+            <a href="#" style="color: var(--bs-light-bg-subtle);">
+                SPECIAL OFFER
+            </a>
+        </button>
+        <br>
+        <br>
+        <br>
+        <!-- Create heading Best Seller -->
+        <section class=" pt-5 pb-5">
+            <div class="bestsellerProduct py-5 d-flex justify-content-center align-items-center">
+                <img src="./static/img/specialoffer/bestseller.png" alt="Bestseller" class="img-fluid">
+            </div>
+
+            <div class="container">
+            <ul class="nav nav-pills mb-2 nav-justified" id="pills-bar">
+              <li class="col-lg-3 col-md-4 col-sm-6 mb-5 text-center choice_list" id="cellingfan">
+                <a href="#" onclick="chonDanhMuc('cellingfan')">
+                  Ceiling Fans
+                </a>
+              </li>
+              <li class="col-lg-3 col-md-4 col-sm-6 mb-5 text-center choice_list" id="tablefan">
+                <a href="#" onclick="chonDanhMuc('tablefan')">
+                  Table Fans
+                </a>
+              </li>
+              <li class="col-lg-3 col-md-4 col-sm-6 mb-5 text-center choice_list" id="standingfan">
+                <a href="#" onclick="chonDanhMuc('standingfan')">
+                  Standing Fans
+                </a>
+              </li>
+              <li class="col-lg-3 col-md-4 col-sm-6 mb-5 text-center choice_list" id="exhaustfan">
+                <a href="#" onclick="chonDanhMuc('exhaustfan')">
+                  Exhaust Fans
+                </a>
+              </li>
+            </ul>
+            <div class="row gx-lg-3 gx-md-2 gx-sm-1" id="displayElement">
+              <!-- Các sản phẩm sẽ được thêm vào đây -->
+            </div>
+          </div>
+        </section>
+        
+
+        <!-- Create layout special offer -->
+        <section class=" pb-5">
+          <div class="specialoffer" id="specialsale">
+            <div class="special-sales-img mx-auto col-lg-3 col-md-3 col-sm-5 py-5" id="logoSpecial_offer">
+              <img src="./static/img/specialoffer/special_offer.png" alt="specialoffer" class="Images">
+            </div>
+            <div class="container">
+              <div class="row gx-lg-3 gx-md-2 gx-sm-1" id="display_special">
+                <!-- Các sản phẩm sẽ được thêm vào đây -->
+              </div>
+              <div class="pagination pt-3">
+                <button id="previousPageBtn" onclick="goToPreviousPage()">Previous</button>
+                <div id="pageButtons" class="pagination-buttons"></div>
+                <button id="nextPageBtn" onclick="goToNextPage()">Next</button>
+              </div>
+            </div>
+          </div>
+        </section>
+        
+        <!-- Modal -->
+        <div class="modal fade" id="productModal" tabindex="-1" role="dialog" aria-labelledby="productModalLabel" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="modalTitle"></h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" data-bs-target="productModal" aria-label="Close" aria-hidden="true">
+                </button>
+              </div>
+              <div class="modal-body" id="modalBody">
+                <img src="" alt="" class="img-fluid" id="modalImage">
+                <p><strong>Price:</strong> <span id="modalPrice"></span></p>
+                <p><strong>Brand:</strong> <span id="modalBrand"></span></p>
+                <p><strong>Color:</strong> <span id="modalColor"></span></p>
+                <p><strong>Product Dimensions:</strong> <span id="modalDimensions"></span></p>
+                <p><strong>Special Feature:</strong> <span id="modalSpecialFeature"></span></p>
+              </div>
+            </div>
+          </div>
+        </div>
+    </body>
+    
+    <footer class="position-relative z-index-10 d-print-none" style="padding-top: 72px">
+        <div class="py-6 bg-gray-200 text-muted">
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-3 mb-5 mb-lg-0">
+                <div class="fw-bold text-uppercase text-dark mb-3">FANoFAN</div>
+                <p><i class="fas fa-home mr-3">&nbsp;</i> 8 Ton That Thuyet St, Hanoi </p>
+                <p><i class="fas fa-envelope mr-3">&nbsp;</i> info@fanofan.com </p>
+                <p><i class="fas fa-phone mr-3">&nbsp;</i> (012) 345-6789 </p>
+                <p><i class="fas fa-print mr-3">&nbsp;</i> (012) 345-6789 </p>
+              </div>
+              <div class="col-lg-3 col-md-6 mb-5 mb-lg-0">
+                <h6 class="text-uppercase text-dark mb-3">Products</h6>
+                <ul class="list-unstyled">
+                  <li><a class="text-muted" href="categories_ceiling.html">Ceiling Fans</a></li>
+                  <li><a class="text-muted" href="categories_table.html">Table Fans</a></li>
+                  <li><a class="text-muted" href="categories_standing.html">Standing Fans</a></li>
+                  <li><a class="text-muted" href="categories_exhaust.html">Exhaust Fans</a></li>
+                </ul>
+              </div>
+              <div class="col-lg-3 col-md-6 mb-5 mb-lg-0">
+                <h6 class="text-uppercase text-dark mb-3">Company</h6>
+                <ul class="list-unstyled">
+                  <li><a class="text-muted" href="about.html">About</a></li>
+                  <li><a class="text-muted" href="gallery.html">Gallery</a></li>
+                  <li><a class="text-muted" href="contact.html">Contact</a></li>
+                  <li><a class="text-muted" href="queries.html">Query</a></li>
+                  <li><a class="text-muted" href="#">Sitemap</a></li>
+                </ul>
+              </div>
+              <div class="col-lg-3">
+                <h6 class="text-uppercase text-dark mb-3">Daily Offers & Discounts</h6>
+                <p class="mb-3">It is very important for the customer to pay attention to the adipiscing process. And so the times.</p>
+                <form action="#" id="newsletter-form">
+                  <div class="input-group mb-3">
+                    <input class="form-control bg-transparent border-dark border-end-0" type="email" placeholder="Your Email Address" aria-label="Your Email Address" fdprocessedid="ozjrm6">
+                    <button class="btn btn-outline-dark border-start-0" type="submit" fdprocessedid="2dvk5">
+                      <i class="fa fa-paper-plane text-lg"></i>
+                    </button>
+                  </div>
+                </form>
+                <ul class="list-inline">
+                  <li class="list-inline-item">
+                    <a class="text-muted text-primary-hover" href="#" title="twitter">
+                      <i class="fab fa-twitter"></i>
+                    </a>
+                  </li>
+                  <li class="list-inline-item">
+                    <a class="text-muted text-primary-hover" href="#" title="facebook">
+                      <i class="fab fa-facebook"></i>
+                    </a>
+                  </li>
+                  <li class="list-inline-item">
+                    <a class="text-muted text-primary-hover" href="#" title="instagram">
+                      <i class="fab fa-instagram"></i>
+                    </a>
+                  </li>
+                  <li class="list-inline-item">
+                    <a class="text-muted text-primary-hover" href="#" title="youtube">
+                      <i class="fab fa-youtube"></i>
+                    </a>
+                  </li>
+                  <li class="list-inline-item">
+                    <a class="text-muted text-primary-hover" href="#" title="pinterest">
+                      <i class="fab fa-pinterest"></i>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="py-4 fw-light bg-gray-800 text-gray-300">
+          <div class="container">
+            <div class="row align-items-center">
+              <div class="col-md-6 text-center text-md-start">
+                <p class="text-sm mb-md-0">© 2023, FANoFAN.  All rights reserved.</p>
+              </div>
+              <div class="col-md-6">
+                <ul class="list-inline mb-0 mt-2 mt-md-0 text-center text-md-end">
+                  <li class="list-inline-item">
+                    <img class="w-2rem" src="./static/img/item/visa.svg" alt="...">
+                  </li>
+                  <li class="list-inline-item">
+                    <img class="w-2rem" src="./static/img/item/mastercard.svg" alt="...">
+                  </li>
+                  <li class="list-inline-item">
+                    <img class="w-2rem" src="./static/img/item/paypal.svg" alt="...">
+                  </li>
+                  <li class="list-inline-item">
+                    <img class="w-2rem" src="./static/img/item/western-union.svg" alt="...">
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+    </footer>
+    <a href="#" id="to-top" title="Back To Top">
+      <i class="fas fa-arrow-up text-white"></i>
+    </a>
+
+    <script src="./static/js/libJs/jquery.min.js"></script>
+    <script src="./static/js/libJs/cdn.jsdelivr.net_npm_bootstrap@5.3.0_dist_js_bootstrap.bundle.min.js"></script>
+    <!-- <script src="./static/js/popper.min.js"></script> -->
+    <script src="./static/js/main.js"></script>
+    <script src="./static/js/gallery.js"></script>
+    <script src="./static/js/inputdata.js"></script>
+    <script src="./static/js/search.js"></script>
+
+</body>
+</html>

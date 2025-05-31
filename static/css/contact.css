@@ -1,0 +1,54 @@
+/*==========================================
+=============== CSS_CONTACT ================
+==========================================*/
+
+/* CSS_CONTACT */
+.banner_gallery{
+    padding: 250px 0;
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.card-text {
+    word-wrap: break-word;
+}
+  
+.icon-item {
+    margin-bottom: 5%;
+    color: #FFFFFF;
+  }
+  
+.item-icon {
+    font-size: xx-large;
+    border-radius: 50%;
+    padding: 3% 3%;
+    background-color: #dc3545;
+}
+  
+@media (max-width: 767.98px) {
+    .address-section .row {
+      flex-wrap: wrap;
+    }
+    
+    .address-section .col-md-6 {
+        flex-basis: 100%;
+        max-width: 100%;
+       
+    }
+    
+    .address-section .col-md-6 .icon-item {
+        margin-bottom: 0;
+    }
+    .infomation {
+        margin-top: 5%;
+    }
+   
+}
+.required-label::after {
+    content: " *";
+    color: red;  
+}
+  
+  
+  

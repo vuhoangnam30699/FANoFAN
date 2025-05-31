@@ -1,0 +1,12 @@
+Brand	HOLMES
+Color	Black
+Power Source	Standard 120V Outlet
+Style	Modern
+Product Dimensions	13.4"D x 10.63"W x 18.5"H
+Room Type	Bedroom
+Special Feature	Adjustable Tilt, Oscillating
+Recommended Uses For Product	Air Circulation
+Mounting Type	Table,Table Fan
+Number of Speeds	3
+
+19.99$

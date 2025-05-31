@@ -1,0 +1,206 @@
+
+/*==========================================
+=============== CSS_GALLERY ================
+==========================================*/
+/* CSS banner gallery*/
+.banner_gallery{
+    padding: 250px 0;
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.choice_list{
+  padding: 2% 0;
+  border-radius: 10px;
+}
+/* CSS Button speccial offer */
+#special-offer-btn {
+  border: none;
+  background-color: var(--bs-red);
+  padding: 1% 1%;
+  font-weight: 500;
+}
+/* phát sáng khi hover vào */
+.btn-shine {
+  position: relative;
+  overflow: hidden;
+}
+
+.btn-shine::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to right, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.3) 50%, rgba(255, 255, 255, 0) 100%);
+  transition: all 1.5s;
+}
+
+.btn-shine:hover::after {
+  left: 100%;
+}
+/* Chuyển động sang 2 bên */
+.animate__animated {
+  animation-duration: var(--animate-duration);
+  animation-fill-mode:  both;
+}
+.animate__animated.animate__slow {
+  animation-duration: calc(var(--animate-duration)*2);
+}
+.animate__animated.animate__delay-5s {
+  animation-delay: calc(var(--animate-delay)*2);
+}
+.animate__animated.animate__infinite {
+  animation-iteration-count: infinite;
+}
+@keyframes shakeX {
+  0%,to {
+    transform: translateZ(0)
+  }
+
+  10%,30%,50%,70%,90% {
+    transform: translate3d(-8px,0,0)
+  }
+
+  20%,40%,60%,80% {
+    transform: translate3d(10px,0,0)
+  }
+}
+.animate__shakeX {
+  animation-name: shakeX
+}
+/* ===css cho phan tu trong bestseller===*/
+/* ---------Css cho chọn element thực hiện---------- */
+#pills-bar li {
+  transition: background-color 0.3s, color 0.3s;
+}
+  
+#pills-bar li:hover {
+  background-color: #dc3545;
+  color: #FFFFFF;
+}
+  
+#pills-bar li.active {
+  background-color: #dc3545;
+  color: #FFFFFF;
+}
+/* ===================Css CARD Product============== */
+.card {
+  height: 100%;
+}
+  
+.card-body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: var(--bs-danger) var(--bs-danger);
+}
+  
+.card-img-top {
+  height: 200px ;
+  object-fit: contain; /* Đảm bảo ảnh được định dạng để phủ hết không gian được cung cấp */
+}
+  
+.card-title,
+.card-text {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  /* color: #dc3545 ; */
+}
+
+.card-title {
+  font-size: 14px; 
+  white-space: nowrap; /* Ngăn chặn chữ tràn ra ngoài khung */
+  overflow: hidden; /* Ẩn phần chữ vượt quá khung */
+  text-overflow: ellipsis; /* Hiển thị dấu chấm ở cuối chữ nếu vượt quá khung */
+}
+.title-title{
+  width: 100%;
+  background-color: #dc3545;
+  color: #FFFFFF;
+  border-radius: 5px;
+}
+
+/* ========css & reponsive cho special-offer====== */
+.specialoffer {
+  padding-top: 50px;
+}
+  
+.special-sales-img {
+  display: block;
+  justify-content: center;
+}
+  
+.Images {
+  max-width: 100%;
+  height: auto;
+}
+  
+@media (max-width: 1199px) {
+  .col-lg-3,
+  .col-md-3,
+  .col-sm-5 {
+    flex-basis: 100%;
+  }
+}
+  
+@media (max-width: 991px) {
+  .col-lg-3,
+  .col-md-3,
+  .col-sm-5 {
+    flex-basis: 100%;
+  }
+}
+  
+@media (max-width: 767px) {
+  .col-lg-3,
+  .col-md-3,
+  .col-sm-5 {
+    flex-basis: 100%;
+  }
+}
+  
+@media (max-width: 575px) {
+  .col-lg-3,
+  .col-md-3,
+  .col-sm-5 {
+    flex-basis: 100%;
+  }
+}
+  
+.pagination {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+  
+.pagination button {
+   margin: 0 5px;
+}
+#previousPageBtn, 
+#nextPageBtn{
+  background-color: transparent; 
+  border: none; 
+  color:var(--bs-danger);
+}
+
+.pagination-buttons button {
+  border: none;
+  background-color: transparent;
+  color: var(--bs-danger);
+  cursor: pointer;
+  margin: 0 5px;
+  padding: 5px;
+  border-radius: 5px;
+}
+  
+.pagination-buttons button.active {
+  font-weight: bold;
+  background-color: var(--bs-danger);
+  box-shadow: 0 0 5px var(--bs-danger);
+  color: var(--bs-gray-100);
+}
+  

@@ -1,0 +1,184 @@
+/* VU HOANG NAM - T2301E */
+
+/*
+* ===================================================
+*             General Styling
+* ===================================================
+*/
+
+header{
+  background-image: url(../img/about/background.jpg) !important;
+  background-attachment: fixed;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+header h1{
+  color: black !important;
+}
+header p, p a{
+  color: black !important;
+  transition: ease .2s;
+}
+header p a:hover{
+  text-decoration: underline;
+  transition: ease .2s;
+  text-underline-offset: 3px;
+}
+
+/*
+* ===================================================
+*         Ceiling - Table - Standing- Exhaust
+* ===================================================
+*/
+
+.ceiling-new-in,.standing-new-in,.table-new-in,.exhaust-new-in{
+  margin-top: 150px;
+}
+.ceiling-new-in  h1,.standing-new-in  h1,.table-new-in  h1, .exhaust-new-in h1{
+  padding: 50px 0px;
+
+}
+@media screen and (max-width: 575px) {
+  .ceiling-new-in-img{
+    margin-top: 30px !important;
+  }
+}
+.ceiling-first-fan, .table-first-fan,.standing-first-fan,.exhaust-first-fan{
+  margin-top: 150px;
+}
+.ceiling-second-fan,.table-second-fan,.standing-second-fan,.exhaust-second-fan{
+  margin-top: 100px;
+}
+.ceiling-third-fan,.table-third-fan,.standing-third-fan,.exhaust-third-fan{
+  margin-top: 150px;
+}
+.ceiling-first-fan h2, .ceiling-second-fan h2, .ceiling-third-fan h2{
+  padding: 50px 0px;
+}
+.table-first-fan h2, .table-second-fan h2, .table-third-fan h2{
+  padding: 50px 0px;
+}
+.standing-first-fan h2, .standing-second-fan h2, .standing-third-fan h2{
+  padding: 50px 0px;
+}
+.exhaust-first-fan h2, .exhaust-second-fan h2, .exhaust-third-fan h2{
+  padding: 50px 0px;
+}
+.carousel-indicators{
+  background-color: rgba(128, 128, 128,0.2) !important;
+  height: 10%;
+  border-radius: 10px;
+  width: fit-content;
+  margin: 0px auto !important;
+  padding: 0px 20px !important;
+}
+.carousel-indicators {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 15;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+  justify-content: center;
+  padding-left: 0;
+  margin-right: 15%;
+  margin-left: 15%;
+  list-style: none;
+}
+.carousel .carousel-indicators li {
+  width: .625rem;
+  height: .625rem;
+  cursor: pointer;
+  border-radius: 50%;
+}
+.carousel-indicators li {
+  box-sizing: content-box;
+  -ms-flex: 0 1 auto;
+  flex: 0 1 auto;
+  width: 30px;
+  height: 3px;
+  margin-right: 3px;
+  margin-left: 3px;
+  text-indent: -999px;
+  cursor: pointer;
+  background-color: #fff;
+  background-clip: padding-box;
+  border-top: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+  opacity: .5;
+  transition: opacity .6s ease;
+}
+.carousel-indicators li{
+  border-radius: 5px !important;
+}
+.ceiling-cutting-edge-qualties i{
+  color: #667490;
+}
+.ceiling-fan-applications{
+  margin-top: 150px;
+}
+.ceiling-fan-applications h1{
+  padding: 50px 0px;
+}
+.ceiling-fan-applications .card-header{
+  text-align: center ;
+}
+@media screen and (max-width:575px) {
+  .ceiling-fan-applications .outdoors{
+    margin: 50px 0;
+  }
+}
+
+/*
+* ===================================================
+*                 View in Gallery
+* ===================================================
+*/
+
+.view-in-gallery{
+  margin-top: 150px;
+  background-color: #222;
+  padding: 150px 0px;
+  background-image: url(../img/view-in-gallery/view-in-gallery.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+}
+.view-in-gallery p{
+  text-align: center !important;
+  color: white !important;
+}
+.gallery-btn{
+  margin: 0px auto;
+  width: fit-content;
+}
+.gallery-btn button{
+  border: none;
+  border-radius: 5px;
+  background-color: #d9232d;
+  color: white !important;
+  font-family: Poppins, sans-serif;
+  font-weight: 500;
+  margin-top: 30px;
+  padding: 10px 30px;
+  transition: ease .3s;
+}
+.gallery-btn button:hover{
+  background-color: #111;
+  transition: ease .3s;
+}
+#table-fan, #standing-fan, #exhaust-fan {
+  object-fit: contain;
+  height: 350px;
+}
+#table-fan-1-1, #table-fan-1-2, #table-fan-2-1, #table-fan-2-2, #exhaust-fan-1-1, #exhaust-fan-1-2, #exhaust-fan-2-1, #exhaust-fan-2-2, #exhaust-fan-3-1, #exhaust-fan-3-2 {
+  object-fit: contain;
+  height: 300px;
+  padding: 33px 0px !important;
+}
+#standing-fan-1-1, #standing-fan-1-2, #standing-fan-2-1, #standing-fan-2-2 {
+  object-fit: contain;
+  height: 400px;
+  padding: 0px 0px 65px 0px !important;
+}
